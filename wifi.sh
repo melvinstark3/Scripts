@@ -10,4 +10,5 @@ dpkg -i linux-headers-<VERSION>-amd64_<VERSION>_amd64.deb
 sudo apt-get install broadcom-sta-dkms
 sudo modprobe -r b44 b43 b43legacy ssb brcmsmac bcma
 sudo modprobe wl
+echo 1 > /proc/brcm_monitor0
 sudo nano /etc/NetworkManager/NetworkManager.conf
